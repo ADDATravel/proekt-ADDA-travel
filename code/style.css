@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+
+    /* center inline elements like the logo */
+}
+
+header {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('images/background-image.jpg');
+    /* Сложи пътя до твоята снимка */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+
+}
+
+.content {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* лек тъмен фон за по-добра четимост */
+}
+
+.section {
+    height: 100vh;
+    /* 100% от височината на прозореца */
+    margin-bottom: 20px;
+}
+
+/*logo-center*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    /* horizontally center */
+    align-items: center;
+    /* vertically center */
+    height: 200px;
+    /* adjust height as needed */
+
+
+}
+
+.logo-container img {
+    max-width: 200px;
+    /* responsive size */
+    margin-top: 100px;
+    /* push image down 100px */
+    height: auto;
+
+}
+
+
+
+
+.header {
+    padding: 30px 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-top: 100px;
+    /* center logo as block element */
+    padding-top: 50px;
+}
+
+.navbar {
+    margin-top: 200px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* font-size на заглавия */
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* сив фон */
+.gray-section {
+    background-color: #9b9999;
+    /* светлосиво */
+    height: fit-content;
+    width: 100%;
+    /* от край до край */
+    padding: 40px 20px;
+    /* вътрешен отстъп (горе/долу, ляво/дясно) */
+    box-sizing: border-box;
+    /* padding не увеличава ширината */
+}
+
+.gray-section h1 {
+    text-align: left;
+    font-size: 48px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.gray-section p {
+    max-width: auto;
+    margin: 0 auto;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.transparent-section {
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap; /* keeps them on the same line */
+}
+
+.text-content {
+  flex: 1; /* text takes up available space */
+  padding: 20px 150px;
+}
+
+.right-image {
+  width: 350px;
+  height: 350px ;
+  border-radius: 5px;
+  flex-shrink: 0; /* prevent image from shrinking */
+  padding: 20px  150px;
+}   
+
+.site-footer {
+  background-color: white;
+  padding: 30px 20px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+.footer-copy {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease;
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.2);
+}
+
+
