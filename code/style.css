@@ -1,66 +1,66 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
 
-    /* center inline elements like the logo */
+  /* center inline elements like the logo */
 }
 
 header {
-    height: 100vh;
+  height: 100vh;
 }
 
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-image: url('images/background-image.jpg');
-    /* Сложи пътя до твоята снимка */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: white;
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('images/background-image.jpg');
+  /* Сложи пътя до твоята снимка */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
 
 }
 
 .content {
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* лек тъмен фон за по-добра четимост */
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* лек тъмен фон за по-добра четимост */
 }
 
 .section {
-    height: 100vh;
-    /* 100% от височината на прозореца */
-    margin-bottom: 20px;
+  height: 100vh;
+  /* 100% от височината на прозореца */
+  margin-bottom: 20px;
 }
 
 /*logo-center*/
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
 .logo-container {
-    display: flex;
-    justify-content: center;
-    /* horizontally center */
-    align-items: center;
-    /* vertically center */
-    height: 200px;
-    /* adjust height as needed */
+  display: flex;
+  justify-content: center;
+  /* horizontally center */
+  align-items: center;
+  /* vertically center */
+  height: 200px;
+  /* adjust height as needed */
 
 
 }
 
 .logo-container img {
-    max-width: 200px;
-    /* responsive size */
-    margin-top: 100px;
-    /* push image down 100px */
-    height: auto;
+  max-width: 200px;
+  /* responsive size */
+  margin-top: 100px;
+  /* push image down 100px */
+  height: auto;
 
 }
 
@@ -68,86 +68,88 @@ body {
 
 
 .header {
-    padding: 30px 0;
+  padding: 30px 0;
+  
 }
 
 .logo {
-    max-width: 150px;
-    height: auto;
-    display: block;
-    margin-top: 100px;
-    /* center logo as block element */
-    padding-top: 50px;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-top: 100px;
+  /* center logo as block element */
+  padding-top: 50px;
 }
 
 .navbar {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-menu li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 8px 12px;
-    transition: background 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s;
 }
 
 .nav-menu li a:hover {
-    background-color: #ddd;
-    border-radius: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
 /* font-size на заглавия */
 h1 {
-    font-size: 64px;
+  font-size: 64px;
+  margin-bottom: -20px;
 }
 
 h2 {
-    font-size: 36px;
-    margin-top: 20px;
+  font-size: 36px;
+  margin-top: 20px;
 }
 
 /* сив фон */
 .gray-section {
-    background-color: #9b9999;
-    /* светлосиво */
-    height: fit-content;
-    width: 100%;
-    /* от край до край */
-    padding: 40px 20px;
-    /* вътрешен отстъп (горе/долу, ляво/дясно) */
-    box-sizing: border-box;
-    /* padding не увеличава ширината */
+  background-color: #9b9999;
+  /* светлосиво */
+  height: fit-content;
+  width: 100%;
+  /* от край до край */
+  padding: 30px 20px;
+  /* вътрешен отстъп (горе/долу, ляво/дясно) */
+  box-sizing: border-box;
+  /* padding не увеличава ширината */
 }
 
 .gray-section h1 {
-    text-align: left;
-    font-size: 48px;
-    font-family:'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 48px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
 .gray-section p {
-    max-width: auto;
-    margin: 0 auto;
-    font-size: 32px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+  max-width: auto;
+  margin: 0 auto;
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
 }
 
 .transparent-section {
-    background-color: transparent;
-    height: 100px;
-    width: 100%;
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
 }
 
 .content-row {
@@ -155,21 +157,25 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: nowrap; /* keeps them on the same line */
+  flex-wrap: nowrap;
+  /* keeps them on the same line */
 }
 
 .text-content {
-  flex: 1; /* text takes up available space */
-  padding: 20px 150px;
+  flex: 1;
+  /* text takes up available space */
+  padding: 20px 80px;
 }
 
 .right-image {
   width: 350px;
-  height: 350px ;
+  height: 350px;
   border-radius: 5px;
-  flex-shrink: 0; /* prevent image from shrinking */
-  padding: 20px  150px;
-}   
+  flex-shrink: 0;
+  /* prevent image from shrinking */
+  padding: 20px 100px;
+  margin-top: 50px;
+}
 
 .site-footer {
   background-color: white;
@@ -181,7 +187,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* allows stacking on small screens */
+  flex-wrap: wrap;
+  /* allows stacking on small screens */
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -214,4 +221,108 @@ h2 {
   transform: scale(1.2);
 }
 
+
+
+
+/*Destinations page styles*/
+
+.destinations-section {
+  background-color: #b9c0bc;
+  height: fit-content;
+  width: 100%;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: -120px;
+}
+
+/* Section background */
+.box-section {
+  padding: 40px 30px;
+  background-color: #d3d9d3;
+  box-sizing: border-box;
+}
+
+/* Grid layout: 3 per row */
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Rectangular card box */
+.box {
+  background-color: #e7e7e7;
+  border-radius: 16px;
+  padding: 20px ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 400px;
+  width: 375px;
+  /* ✅ makes them all rectangular and same height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* Image inside the box */
+.box img {
+  width: 100%;
+  height: 240px;
+  /* ✅ consistent height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Text styles */
+.box h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* 📱 Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .box-grid {
+    grid-template-columns: 1fr;
+    /* 1 box per row */
+  }
+
+  .box {
+    height: auto;
+    /* allow flexible height on mobile */
+    transition: transform 0.2s ease;
+  }
+
+  .box img {
+    height: auto;
+    /* keep image ratio */
+  }
+}
+
+.box a {
+  color: inherit; /* запази цвета на текста */
+  text-decoration: none; /* махни underline */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.box:hover {
+  transform: scale(1.03);     /* леко уголемяване */
+  transition: transform 0.2s ease;
+  cursor: pointer;            /* показва ръчичка */
+}
 
