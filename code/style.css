@@ -1,75 +1,42 @@
+/* --- GENERAL FIXES --- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   text-align: center;
-
-  /* center inline elements like the logo */
+  background-image: url('images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  overflow-x: hidden;
 }
 
 header {
   height: 100vh;
 }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-image: url('images/background-image.jpg');
-  /* Сложи пътя до твоята снимка */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-
-}
-
-.content {
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
-  /* лек тъмен фон за по-добра четимост */
-}
-
-.section {
-  height: 100vh;
-  /* 100% от височината на прозореца */
-  margin-bottom: 20px;
-}
-
-/*logo-center*/
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
+/* --- LOGO --- */
 .logo-container {
   display: flex;
   justify-content: center;
-  /* horizontally center */
   align-items: center;
-  /* vertically center */
   height: 200px;
-  /* adjust height as needed */
-
-
 }
 
 .logo-container img {
   max-width: 200px;
-  /* responsive size */
   margin-top: 100px;
-  /* push image down 100px */
   height: auto;
-
 }
-
-
-
 
 .header {
   padding: 30px 0;
-  
 }
 
 .logo {
@@ -77,10 +44,10 @@ body {
   height: auto;
   display: block;
   margin-top: 100px;
-  /* center logo as block element */
   padding-top: 50px;
 }
 
+/* --- NAVBAR --- */
 .navbar {
   margin-top: 200px;
 }
@@ -92,6 +59,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .nav-menu li a {
@@ -105,9 +73,9 @@ body {
 .nav-menu li a:hover {
   background-color: #ddd;
   border-radius: 5px;
+  color: #000;
 }
 
-/* font-size на заглавия */
 h1 {
   font-size: 64px;
   margin-bottom: -20px;
@@ -118,29 +86,23 @@ h2 {
   margin-top: 20px;
 }
 
-/* сив фон */
+/* --- SECTIONS --- */
 .gray-section {
   background-color: #9b9999;
-  /* светлосиво */
-  height: fit-content;
+  height: auto;
   width: 100%;
-  /* от край до край */
   padding: 30px 20px;
-  /* вътрешен отстъп (горе/долу, ляво/дясно) */
-  box-sizing: border-box;
-  /* padding не увеличава ширината */
 }
 
 .gray-section h1 {
   text-align: left;
   font-size: 48px;
   font-family: 'Courier New', Courier, monospace;
+  padding: 20px 0px;
 }
 
-
 .gray-section p {
-  max-width: auto;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
   font-size: 28px;
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
@@ -157,26 +119,24 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: nowrap;
-  /* keeps them on the same line */
+  flex-wrap: wrap;
 }
 
 .text-content {
   flex: 1;
-  /* text takes up available space */
-  padding: 20px 80px;
+  padding: 20px;
+  text-align: left;
 }
 
 .right-image {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   border-radius: 5px;
-  flex-shrink: 0;
-  /* prevent image from shrinking */
-  padding: 20px 100px;
-  margin-top: 50px;
+  padding: 20px 0;
 }
 
+/* --- FOOTER --- */
 .site-footer {
   background-color: white;
   padding: 30px 20px;
@@ -188,7 +148,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* allows stacking on small screens */
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -212,8 +171,8 @@ h2 {
 }
 
 .footer-socials img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   transition: transform 0.2s ease;
 }
 
@@ -221,64 +180,50 @@ h2 {
   transform: scale(1.2);
 }
 
-
-
-
-/*Destinations page styles*/
-
+/* --- DESTINATIONS --- */
 .destinations-section {
   background-color: #b9c0bc;
-  height: fit-content;
   width: 100%;
   padding: 50px 20px;
   text-align: center;
   margin-top: -120px;
 }
 
-/* Section background */
 .box-section {
   padding: 40px 30px;
   background-color: #d3d9d3;
-  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
 }
 
-/* Grid layout: 3 per row */
 .box-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-/* Rectangular card box */
 .box {
   background-color: #e7e7e7;
   border-radius: 16px;
-  padding: 20px ;
+  padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   height: 400px;
-  width: 375px;
-  /* ✅ makes them all rectangular and same height */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
-  overflow: hidden;
   transition: transform 0.2s ease;
 }
 
-/* Image inside the box */
 .box img {
   width: 100%;
   height: 240px;
-  /* ✅ consistent height */
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
-/* Text styles */
 .box h3 {
   margin: 0;
   font-size: 18px;
@@ -292,28 +237,9 @@ h2 {
   color: #333;
 }
 
-/* 📱 Responsive: stack vertically on small screens */
-@media (max-width: 768px) {
-  .box-grid {
-    grid-template-columns: 1fr;
-    /* 1 box per row */
-  }
-
-  .box {
-    height: auto;
-    /* allow flexible height on mobile */
-    transition: transform 0.2s ease;
-  }
-
-  .box img {
-    height: auto;
-    /* keep image ratio */
-  }
-}
-
 .box a {
-  color: inherit; /* запази цвета на текста */
-  text-decoration: none; /* махни underline */
+  color: inherit;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,20 +248,16 @@ h2 {
 }
 
 .box:hover {
-  transform: scale(1.03);     /* леко уголемяване */
-  transition: transform 0.2s ease;
-  cursor: pointer;            /* показва ръчичка */
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
-
-/*Salzburg*/
-.salzburg{
+/* --- IMAGE GRID SECTION --- */
+.salzburg {
   background-color: #ffffff;
-  margin-inline: 10vw;
-  height:fit-content;
   width: 80%;
-  margin-top: 100PX;
-  border-radius: 18PX;
+  margin: 100px auto 0;
+  border-radius: 18px;
   text-align: center;
   color: #000;
   padding: 5px;
@@ -358,8 +280,9 @@ h2 {
 }
 
 .image-row img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -372,6 +295,7 @@ h2 {
   margin: 20px 0;
 }
 
+/* --- NAVIGATION ARROWS --- */
 .back-arrow,
 .next-arrow {
   position: absolute;
@@ -390,23 +314,21 @@ h2 {
   cursor: pointer;
 }
 
-/* Лява стрелка */
 .back-arrow {
   left: 30px;
 }
 
-/* Дясна стрелка */
 .next-arrow {
   right: 30px;
 }
 
-/*Бутон за връщане*/
+/* --- RETURN BUTTON --- */
 .return-button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   padding: 12px 20px;
-  background-color: #4caf50;
+  background-color: #333833;
   color: white;
   text-decoration: none;
   border-radius: 12px;
@@ -420,4 +342,43 @@ h2 {
   transform: scale(1.08);
   background-color: #43a047;
   cursor: pointer;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .logo-container img,
+  .logo {
+    max-width: 120px;
+  }
+
+  .navbar {
+    margin-top: 100px;
+  }
+
+  .text-content,
+  .right-image {
+    padding: 10px;
+  }
+
+  .footer-socials img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .box {
+    height: auto;
+  }
+
+  .return-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
 }
