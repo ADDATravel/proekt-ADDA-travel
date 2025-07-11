@@ -354,9 +354,14 @@ h2 {
     font-size: 28px;
   }
 
+  .logo-container {
+    height: 150px;
+  }
+
   .logo-container img,
   .logo {
-    max-width: 120px;
+    max-width: 100px;
+    margin-top: 50px;
   }
 
   .navbar {
